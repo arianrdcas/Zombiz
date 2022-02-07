@@ -10,39 +10,19 @@ import 'popper.js';
 import 'bootstrap';
 
 
-/*bootstrap.min.css*/
-
-import './assets/css/bootstrap.min.css';
-
-/*style.css*/
-import './assets/css/style.css';
 
 
-/*responsive.css*/
-import './assets/css/responsive.css';
-
-
-
-
-/*bootsnav*/
-import './assets/css/bootsnav.css';
-
-
-import './assets/css/font-awesome.min.css'; // coloca los iconos del HeaderStart*/
-import './assets/css/animate.css';
-import './assets/css/hover-min.css';
-import './assets/css/magnific-popup.css';
-
-/*owl.carousel.css*/
-import './assets/css/owl.carousel.min.css';
-import './assets/css/owl.theme.default.min.css';
-
-
-import Layout from './Layout';
+import App from './App';
 
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-
+import ViewAbout from "./ViewAbout";
+import Layout from "./Layout";
+import Service from "./Service";
+import Project from "./Project";
+import ViewTeam from "./ViewTeam";
+import Blog from "./Blog"
+import ViewContact from "./ViewContact";
 
 /*global.jQuery = require('jquery');
 /*require('bootstrap');*/
@@ -50,7 +30,7 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
     <BrowserRouter>
-        <Layout />
+        <App/>
     </BrowserRouter>,
 document.getElementById("root")
 );

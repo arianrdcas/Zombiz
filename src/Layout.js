@@ -14,7 +14,7 @@ import Sponsor from "./views/Sponsor";
 import News from "./views/News";
 import ContacUs from "./views/ContactUs";
 import StartNow from "./views/StarNow";
-import Footer from "./views/Footer";
+import Footer from "./components/Footer";
 
 
 const Layout = () =>{
