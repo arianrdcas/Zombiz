@@ -1,17 +1,58 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+
+import '@popperjs/core';
+
+
+
+import 'jquery';
+import 'popper.js';
+import 'bootstrap';
+
+
+/*bootstrap.min.css*/
+
+import './assets/css/bootstrap.min.css';
+
+/*style.css*/
+import './assets/css/style.css';
+
+
+/*responsive.css*/
+import './assets/css/responsive.css';
+
+
+
+
+/*bootsnav*/
+import './assets/css/bootsnav.css';
+
+
+import './assets/css/font-awesome.min.css'; // coloca los iconos del HeaderStart*/
+import './assets/css/animate.css';
+import './assets/css/hover-min.css';
+import './assets/css/magnific-popup.css';
+
+/*owl.carousel.css*/
+import './assets/css/owl.carousel.min.css';
+import './assets/css/owl.theme.default.min.css';
+
+
+import Layout from './Layout';
+
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+
+
+/*global.jQuery = require('jquery');
+/*require('bootstrap');*/
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <BrowserRouter>
+        <Layout />
+    </BrowserRouter>,
+document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
